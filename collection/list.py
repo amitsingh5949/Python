@@ -34,5 +34,8 @@ print(student_names)  # ['namit', 'aryan', 'sirsa', 'mark', 'alice', 'rob', 'jon
 print(student_names[1:])  # ['aryan', 'sirsa', 'mark', 'alice', 'rob', 'jon', 'jini', 'kevin', 'max', 'carl']
 print(student_names[1:-1:2])  # ['aryan', 'mark', 'rob', 'jini', 'max']
 
+list1 = {False, 'amit', 1, None, True, 2}
+print(list1)  # {False, 1, 2, 'amit', None} not printing last True..idk
+
 
 
