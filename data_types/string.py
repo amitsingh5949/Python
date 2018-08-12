@@ -37,3 +37,18 @@ print(num[:2])  # 12
 print(num[2:5])  # 345
 print(num[0::2])  # 13579
 print(num[::-1])  # 987654321
+
+x  = 'a' 'b'  # adjacent strings are concatenated
+print(x)   # ab
+
+# string join method
+
+joinedstr = ','.join(['1','2','3','4'])  # concatenates the strings in list with delimiter ,
+print(joinedstr)  # 1,2,3,4
+
+# string partition
+
+print("amit:manu".partition(':'))  # ('amit', ':', 'manu'), partition returns the tuple of before,current, after string
+
+a, _, b = "amit:manu".partition(':')
+print(a, b)  # amit manu

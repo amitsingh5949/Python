@@ -21,12 +21,31 @@ print(range(5) == [0, 1, 2, 3, 4])  # though statement is logically true but it 
 print(range(1, 5) == [1, 2, 3, 4])  # though statement is logically true but it prints false
 print(range(1, 5, 2) == [1, 3])  # though statement is logically true but it prints false
 
+print(list(range(1,5,2)))  # [1, 3]
+
 # we can use break and continue smiliar to other languages
 for x in range(10):
     if x==5:
         break;
     print(x)
 
+# unpythonic
 
+x = [0, 1, 2, 3, 4]
+
+for i in range(len(x)):
+    print(x[i])
+
+
+# pythonic
+
+for i in x:
+    print(i)
+
+# if we need indexes
+for i in enumerate(x):
+    print(i)  # gives tuple of index and value
+    index, value = i[0], i[1] # (0, 0) ...
+    print(index, value)  # 0 0 ...
 
 

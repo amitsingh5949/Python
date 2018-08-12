@@ -26,3 +26,6 @@ for item in items:
 del student['name']  # deletes key-value pair
 print(student)
 
+student['address'] = 'HAl second stage'  # if key is not present then it gets added
+print(student)  # {'age': 28, 'college': 'utd', 'address': 'HAl second stage'}
+

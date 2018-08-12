@@ -17,8 +17,10 @@ if a == 5:
 else:
     print('a is not ' + str(a))
 
-if a != 5:
-    print('a is not ' + str(a))
+if a > 5:
+    print('a is greater than ' + str(a))
+elif a == 5:
+    print('a is equal to ' + str(a))
 else:
     print('a is  ' + str(a))  # a is 5
 
