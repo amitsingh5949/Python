@@ -114,6 +114,9 @@ print(b)   # [4, 5, 1, 2, 8, 0, 6]
 print(c)  # <list_reverseiterator object at 0x7f5a62a50860> , return iteratable reversed list
 print(list(c))  # [6, 0, 8, 2, 1, 5, 4]
 
+pp = [1, 2, 3, 1, 1, 1, 1]
+print(pp.count(1))  # 5
+
 
 
 
