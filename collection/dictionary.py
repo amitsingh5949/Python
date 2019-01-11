@@ -1,5 +1,7 @@
 from pprint import pprint as pp
 
+#dictionaries are key-value pair collection which are unordered and cannot be sorted
+
 student = {
     'name': 'amit',
     'age': 28,

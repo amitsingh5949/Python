@@ -4,7 +4,7 @@ print(set1)  # {0, 1, 34, 3, 4, 12, 45, 93}
 #print(set1[0])  3 'set' object does not support indexing
 
 set2 = set(set1)
-set2.add(46)
+set2.add(46) # adds element to set
 print(set2)  # {0, 1, 34, 3, 4, 12, 45, 46, 93}
 
 print(46 in set2)  # True
@@ -19,6 +19,8 @@ print(type(set3))  # <class 'set'>
 set4 = set([2, 2, 2])
 print(set4)  # {2} duplicates are discarded
 
+set41 = set('banana') #set constructor takes string as argument as well
+print(set41) #{'a', 'b', 'n'}
 # update
 
 set4.update(set2)

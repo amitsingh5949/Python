@@ -28,6 +28,7 @@ def save_data(student_list):
             f.write(student['name'] + " ")
             f.write(str(student['id']) + "\n")
         f.close()
+
     except Exception as error:
         print('error opening file')
         print (error)
@@ -39,6 +40,8 @@ def read_data():
         for line in f.readlines():
             arr = line.split(" ")
             add_student(arr[0], arr[1])
+        #f.seek(0)  # will bring the cursor back to starting postion
+        f.close()
     except Exception:
         print('error occured while reading from file')
 
@@ -57,6 +60,13 @@ save_data(student_list)
 read_data()
 print_student_info()
 
+"""
+mode = 'r' / 'w' / 'a'  / r+' / 'w+'
+"""
 
 
-
+"""
+if use with no need to close the file like
+with open('myfile.txt', mode = 'w+') as file:
+    
+"""

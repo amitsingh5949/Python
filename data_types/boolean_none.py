@@ -14,5 +14,5 @@ False
 True
 """
 
-x = None
+x = None # used as placeholder of something whose value has not be decided yet
 print(x)  # None

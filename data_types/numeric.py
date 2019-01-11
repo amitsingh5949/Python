@@ -6,7 +6,16 @@ print(a+b) #23456778900765544322222444667788999997663345456777878998988988776765
 pi = 3.147
 print(a+pi) # 5.147
 
+#type() function
+print(type(a)) # <class 'int'>
+print(type(pi)) # <class 'float'>
+
 #Type casting
 print(int(pi)) # 3
+print(float(a)) # 2.0
 print(int(pi) + float(a)) # 5.0
-print(int(pi) + float(a)) # 5.0
+
+#Power operator
+print(2 ** 3) # 8
+print( 2 + 10 * 10 + 2) # 104 it performs the association automatically
+print( 0.1 + 0.2 - 0.3)  # 5.551115123125783e-17 https://docs.python.org/2/tutorial/floatingpoint.html

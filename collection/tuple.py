@@ -1,3 +1,5 @@
+#tuples are immutable, lists are mutable
+
 t = (1, 2, True, None, 'amit', True)
 
 print(t)  # (1, 2, True, None, 'amit', True)
@@ -24,11 +26,12 @@ print(k[0])  # 32
 y = ()  # empty tuple
 print(type(y))  # <class 'tuple'>
 
-z = tuple([1, 2, 3, 4])  # creating tuple from list
+z = tuple([1, 2, 3, 4, 1])  # creating tuple from list
 print(z)  # (1, 2, 3, 4)
 
 print(5 in z)  # False , in works like contains
 
+print(z.count(1)) # 2
 
 # tuple unpacking
 
